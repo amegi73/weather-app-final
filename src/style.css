@@ -1,15 +1,6 @@
 body {
   font-family: "Fragment Mono", monospace;
 }
-.weather-app {
-  font-family: "Fragment Mono", monospace;
-  max-width: 600px;
-  margin: 30px auto;
-  padding: 20px;
-  border: 1px solid #dadde1;
-  background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
-  border-radius: 15px;
-}
 
 h1 {
   color: black;
@@ -31,4 +22,36 @@ li {
   font-size: 12px;
   font-weight: 100;
   line-height: 19px;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.weather-app {
+  font-family: "Fragment Mono", monospace;
+
+  padding: 20px;
+  border: 1px solid #dadde1;
+  background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+  border-radius: 15px;
+}
+.overview {
+  margin-bottom: 20px;
+}
+.weather-temperature img {
+  margin-right: 10px;
+  height: 64px;
+  width: 64px;
+}
+
+.weather-temperature strong {
+  color: black;
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
 }
