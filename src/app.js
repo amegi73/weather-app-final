@@ -34,7 +34,7 @@ function displayForecast(response) {
 
   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Mon", "Tue", "Wed", "Thu"];
+  //let days = ["Mon", "Tue", "Wed", "Thu"];
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
@@ -43,7 +43,7 @@ function displayForecast(response) {
         forecastHTML +
         `
     <div class="col-2">
-      <div class="weather-forecast-date">${day}</div>
+      <div class="weather-forecast-date">${formatDay(forecastDay.time)}</div>
 
       <img
         src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
@@ -88,7 +88,7 @@ function displayTemperature(response) {
 
   celsiusTemperature = response.data.temperature.current;
 
-  conditionElement.innerHTML = response.data.condition.description;
+  descriptionElement.innerHTML = response.data.condition.description;
 
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
