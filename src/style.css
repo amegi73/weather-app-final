@@ -24,10 +24,10 @@ li {
   font-weight: 100;
   line-height: 19px;
 }
-
-li:first.letter {
+li::first-letter {
   text-transform: capitalize;
 }
+
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
@@ -86,4 +86,14 @@ li:first.letter {
 
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+
+.btn {
+  background: #9993e2;
+  border: none;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #9993e2;
 }
