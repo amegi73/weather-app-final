@@ -88,12 +88,16 @@ li::first-letter {
   font-size: 13px;
 }
 
+.weather-forecast-temperatures-min {
+  opacity: 0.5;
+}
+
 .btn {
   background: #9993e2;
   border: none;
 }
 
 .btn:hover {
-  background: transparent;
+  background: white;
   color: #9993e2;
 }
